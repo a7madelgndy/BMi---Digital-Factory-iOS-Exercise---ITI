@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		15B0FF6D2CAEA71A00464598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF6C2CAEA71A00464598 /* AppDelegate.swift */; };
 		15B0FF6F2CAEA71A00464598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF6E2CAEA71A00464598 /* SceneDelegate.swift */; };
-		15B0FF712CAEA71A00464598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF702CAEA71A00464598 /* ViewController.swift */; };
+		15B0FF712CAEA71A00464598 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF702CAEA71A00464598 /* MoviesViewController.swift */; };
 		15B0FF742CAEA71A00464598 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 15B0FF732CAEA71A00464598 /* Base */; };
 		15B0FF762CAEA72700464598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B0FF752CAEA72700464598 /* Assets.xcassets */; };
 		15B0FF792CAEA72700464598 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 15B0FF782CAEA72700464598 /* Base */; };
 		15B0FF842CAEA72800464598 /* BM_ExcersiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF832CAEA72800464598 /* BM_ExcersiseTests.swift */; };
 		15B0FF8E2CAEA72800464598 /* BM_ExcersiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF8D2CAEA72800464598 /* BM_ExcersiseUITests.swift */; };
 		15B0FF902CAEA72800464598 /* BM_ExcersiseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF8F2CAEA72800464598 /* BM_ExcersiseUITestsLaunchTests.swift */; };
+		15B0FF9D2CAEAC3400464598 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0FF9C2CAEAC3400464598 /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		15B0FF692CAEA71A00464598 /* BM Excersise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BM Excersise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B0FF6C2CAEA71A00464598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15B0FF6E2CAEA71A00464598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15B0FF702CAEA71A00464598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15B0FF702CAEA71A00464598 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		15B0FF732CAEA71A00464598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15B0FF752CAEA72700464598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B0FF782CAEA72700464598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		15B0FF892CAEA72800464598 /* BM ExcersiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BM ExcersiseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B0FF8D2CAEA72800464598 /* BM_ExcersiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BM_ExcersiseUITests.swift; sourceTree = "<group>"; };
 		15B0FF8F2CAEA72800464598 /* BM_ExcersiseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BM_ExcersiseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15B0FF9C2CAEAC3400464598 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				15B0FF6C2CAEA71A00464598 /* AppDelegate.swift */,
 				15B0FF6E2CAEA71A00464598 /* SceneDelegate.swift */,
-				15B0FF702CAEA71A00464598 /* ViewController.swift */,
+				15B0FF702CAEA71A00464598 /* MoviesViewController.swift */,
 				15B0FF722CAEA71A00464598 /* Main.storyboard */,
 				15B0FF752CAEA72700464598 /* Assets.xcassets */,
 				15B0FF772CAEA72700464598 /* LaunchScreen.storyboard */,
 				15B0FF7A2CAEA72700464598 /* Info.plist */,
+				15B0FF9C2CAEAC3400464598 /* MovieCollectionViewCell.swift */,
 			);
 			path = "BM Excersise";
 			sourceTree = "<group>";
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B0FF712CAEA71A00464598 /* ViewController.swift in Sources */,
+				15B0FF712CAEA71A00464598 /* MoviesViewController.swift in Sources */,
 				15B0FF6D2CAEA71A00464598 /* AppDelegate.swift in Sources */,
 				15B0FF6F2CAEA71A00464598 /* SceneDelegate.swift in Sources */,
+				15B0FF9D2CAEAC3400464598 /* MovieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
